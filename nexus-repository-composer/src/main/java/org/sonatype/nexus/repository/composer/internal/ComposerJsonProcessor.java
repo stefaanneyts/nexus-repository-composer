@@ -192,7 +192,9 @@ public class ComposerJsonProcessor
         for (String packageVersion : packageVersions.keySet()) {
           // TODO: Make this more robust, right now it makes a lot of assumptions and doesn't deal with bad things well
           Map<String, Object> versionInfo = (Map<String, Object>) packageVersions.get(packageVersion);
-          versionInfo.remove(SOURCE_KEY); // TODO: For now don't allow sources, probably should make this configurable?
+
+// STEFAAN: keep source 
+//          versionInfo.remove(SOURCE_KEY); // TODO: For now don't allow sources, probably should make this configurable?
 
           Map<String, Object> distInfo = (Map<String, Object>) versionInfo.get(DIST_KEY);
           if (distInfo != null && ZIP_TYPE.equals(distInfo.get(TYPE_KEY))) {

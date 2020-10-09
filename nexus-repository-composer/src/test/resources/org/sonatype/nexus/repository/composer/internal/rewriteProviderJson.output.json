@@ -17,6 +17,11 @@
             "homepage": "http://example.com/author1"
           }
         ],
+        "source": {
+          "type": "git",
+          "url": "https:\/\/git.example.com\/vendor1\/project1.git",
+          "reference": "48954c0fa210437795be418e708b379598333d0a"
+        },
         "dist": {
           "type": "zip",
           "url": "http://nexus.repo/base/repo/vendor1/project1/branch1/vendor1-project1-branch1.zip",
@@ -36,6 +41,11 @@
         "license": [
           "MIT"
         ],
+        "source": {
+          "type": "git",
+          "url": "https:\/\/git.example.com\/vendor2\/project1.git",
+          "reference": "be418e708b379598333d0a48954c0fa210437795"
+        },
         "authors": [
           {
             "name": "Author 2",
